@@ -2,14 +2,15 @@
 
 ## Index
 
-1. [Basics](#basics)
-    - [Placeholders](#place)
-    - [Examples](#ex)
-2. [Arrays](#arrays)
-    - [Properties](#props)
-    - [Copying/Sorting](#gops)
+**[Basics](#basics)**
+- [Placeholders](#place)
+- [Examples](#ex)
+    
+**[Arrays](#arrays)**
+- [Properties](#props)
+- [Copying/Sorting](#gops)
       * [Examples](#array-example)
-    - [Array Manipulation](#man)
+- [Array Manipulation](#man)
       * [Adding/Removing Elements](#addrem)
         + [Examples](#array-elements-examples)
       * [Combining Arrays](#comb)
@@ -18,17 +19,20 @@
         + [Examples](#array-split-examples)
       * [Shaping](#shape)
       * [Misc](#misc)
-3. [Mathematics](#maths)
-    - [Arithmetic Operations](#ops)
+      
+**[Mathematics](#maths)**
+- [Arithmetic Operations](#ops)
       * [Examples](#operations-examples)
-    - [Comparison](#comparison)
+- [Comparison](#comparison)
       * [Examples](#comparison-example)
-    - [Basic Statistics](#stats)
+- [Basic Statistics](#stats)
       * [Examples](#stats-examples)
-    - [More](#more)
-4. [Slicing and Subsetting](#ss)
-    - [Examples](#exp)
-5. [Tricks](#tricks)
+- [More](#more)
+    
+**[Slicing and Subsetting](#ss)**
+- [Examples](#exp)
+    
+**[Tricks](#tricks)**
 
 </br>
 
