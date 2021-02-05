@@ -41,22 +41,22 @@
 import numpy as np
 
 # 1 dimensional
-x = np.array([1,2,3])
+>>> x = np.array([1,2,3])
 
 # 2 dimensional
-y = np.array([(1,2,3),(4,5,6)])
+>>> y = np.array([(1,2,3),(4,5,6)])
 
-x = np.arange(3)
->>> array([0, 1, 2])
+>>> x = np.arange(3)
+array([0, 1, 2])
 
-y = np.arange(3.0)
->>> array([ 0.,  1.,  2.])
+>>> y = np.arange(3.0)
+array([ 0.,  1.,  2.])
 
-x = np.arange(3,7)
->>> array([3, 4, 5, 6])
+>>> x = np.arange(3,7)
+array([3, 4, 5, 6])
 
-y = np.arange(3,7,2)
->>> array([3, 5])
+>>> y = np.arange(3,7,2)
+array([3, 5])
 ```
 
 ### Placeholders <a name="place"></a>
@@ -69,23 +69,23 @@ y = np.arange(3,7,2)
 
 #### Examples
 ```python
-np.linspace( 0, 2, 15 )
->>> array([0.        , 0.14285714, 0.28571429, 0.42857143, 0.57142857,
+>>> np.linspace( 0, 2, 15 )
+array([0.        , 0.14285714, 0.28571429, 0.42857143, 0.57142857,
        0.71428571, 0.85714286, 1.        , 1.14285714, 1.28571429,
        1.42857143, 1.57142857, 1.71428571, 1.85714286, 2.        ])
 
-d = np.zeros((2,3))
-print(d)
->>> [[0. 0. 0.]
+>>> d = np.zeros((2,3))
+>>> print(d)
+[[0. 0. 0.]
  [0. 0. 0.]]
 
-e = np.ones((2,3))
-print(e)
->>> [[1. 1. 1.]
+>>> e = np.ones((2,3))
+>>> print(e)
+[[1. 1. 1.]
  [1. 1. 1.]]
 
-np.random.rand(2,3)
->>> array([[0.63814812, 0.10556618, 0.80024855],
+>>> np.random.rand(2,3)
+array([[0.63814812, 0.10556618, 0.80024855],
        [0.45082757, 0.84823512, 0.28658515]])
 ```
 
@@ -113,12 +113,11 @@ np.random.rand(2,3)
 
 #### Examples
 ```python
-import numpy as np
 # Sort sorts in ascending order
-y = np.array([10, 9, 8, 7, 6, 5, 4, 3, 2, 1])
-y.sort()
-print(y)
->>> [ 1  2  3  4  5  6  7  8  9  10]
+>>> y = np.array([10, 9, 8, 7, 6, 5, 4, 3, 2, 1])
+>>> y.sort()
+>>> print(y)
+[ 1  2  3  4  5  6  7  8  9  10]
 ```
 
 ## Array Manipulation Routines <a name="man"></a>
@@ -136,16 +135,15 @@ print(y)
 
 #### Example
 ```python
-import numpy as np
 # Append items to array
-a = np.array([(1, 2, 3),(4, 5, 6)])
-b = np.append(a, [(7, 8, 9)])
-print(b)
->>> [1 2 3 4 5 6 7 8 9]
+>>> a = np.array([(1, 2, 3),(4, 5, 6)])
+>>> b = np.append(a, [(7, 8, 9)])
+>>> print(b)
+[1 2 3 4 5 6 7 8 9]
 
 # Remove index 2 from previous array
-print(np.delete(b, 2))
->>> [1 2 4 5 6 7 8 9]
+>>> print(np.delete(b, 2))
+[1 2 4 5 6 7 8 9]
 ```
 
 ### Combining Arrays <a name="comb"></a>
@@ -157,18 +155,17 @@ print(np.delete(b, 2))
 
 #### Example
 ```python
-import numpy as np
-a = np.array([1, 3, 5])
-b = np.array([2, 4, 6])
+>>> a = np.array([1, 3, 5])
+>>> b = np.array([2, 4, 6])
 
 # Stack two arrays row-wise
-print(np.vstack((a,b)))
->>> [[1 3 5]
-     [2 4 6]]
+>>> print(np.vstack((a,b)))
+[[1 3 5]
+ [2 4 6]]
 
 # Stack two arrays column-wise
-print(np.hstack((a,b)))
->>> [1 3 5 2 4 6]
+>>> print(np.hstack((a,b)))
+[1 3 5 2 4 6]
 ```
 
 ### Splitting Arrays <a name="split"></a>
@@ -181,9 +178,9 @@ print(np.hstack((a,b)))
 #### Example
 ```python
 # Split array into groups of ~3
-a = np.array([1, 2, 3, 4, 5, 6, 7, 8])
-print(np.array_split(a, 3))
->>> [array([1, 2, 3]), array([4, 5, 6]), array([7, 8])]
+>>> a = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+>>> print(np.array_split(a, 3))
+[array([1, 2, 3]), array([4, 5, 6]), array([7, 8])]
 ```
 ### Shaping Arrays <a name="shape"></a>
 ##### TODO
@@ -246,6 +243,7 @@ print(np.add(a, b))
 # Whose roots are 1,1
 >>> np.roots([1,-2,1])
 array([1., 1.])
+
 # Similarly x^2 - 4 = 0 has roots as x=±2
 >>> np.roots([1,0,-4])
 array([-2.,  2.])
@@ -265,10 +263,10 @@ array([-2.,  2.])
 #### Example
 ```python
 # Using comparison operators will create boolean NumPy arrays
-z = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
-c = z < 6
-print(c)
->>> [ True  True  True  True  True False False False False False]
+>>> z = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+>>> c = z < 6
+>>> print(c)
+[ True  True  True  True  True False False False False False]
 ```
 ### Basic Statistics <a name="stats"></a>
 | Operator | Description    |Reference |
@@ -284,12 +282,12 @@ print(c)
 a = np.array([1, 1, 2, 5, 8, 10, 11, 12])
 
 # Standard deviation
-print(np.std(a))
->>> 4.2938910093294167
+>>> print(np.std(a))
+4.2938910093294167
 
 # Median
-print(np.median(a))
->>> 6.5
+>>> print(np.median(a))
+6.5
 ```
 
 
@@ -319,29 +317,29 @@ print(np.median(a))
 
 #### Examples
 ```python
-b = np.array([(1, 2, 3), (4, 5, 6)])
+>>> b = np.array([(1, 2, 3), (4, 5, 6)])
 
 # The index *before* the comma refers to *rows*,
 # the index *after* the comma refers to *columns*
-print(b[0:1, 2])
->>> [3]
+>>> print(b[0:1, 2])
+[3]
 
-print(b[:len(b), 2])
->>> [3 6]
+>>> print(b[:len(b), 2])
+[3 6]
 
-print(b[0, :])
->>> [1 2 3]
+>>> print(b[0, :])
+[1 2 3]
 
-print(b[0, 2:])
->>> [3]
+>>> print(b[0, 2:])
+[3]
 
-print(b[:, 0])
->>> [1 4]
+>>> print(b[:, 0])
+[1 4]
 
-c = np.array([(1, 2, 3), (4, 5, 6)])
-d = c[1:2, 0:2]
-print(d)
->>> [[4 5]]
+>>> c = np.array([(1, 2, 3), (4, 5, 6)])
+>>> d = c[1:2, 0:2]
+>>> print(d)
+[[4 5]]
 
 ```
 
@@ -351,26 +349,26 @@ print(d)
 
 ```python
 # Index trick when working with two np-arrays
-a = np.array([1,2,3,6,1,4,1])
-b = np.array([5,6,7,8,3,1,2])
+>>> a = np.array([1,2,3,6,1,4,1])
+>>> b = np.array([5,6,7,8,3,1,2])
 
 # Only saves a at index where b == 1
 other_a = a[b == 1]
+
 #Saves every spot in a except at index where b != 1
 other_other_a = a[b != 1]
 ```
 
 ```python
-import numpy as np
-x = np.array([4,6,8,1,2,6,9])
-y = x > 5
-print(x[y])
->>> [6 8 6 9]
+>>> x = np.array([4,6,8,1,2,6,9])
+>>> y = x > 5
+>>> print(x[y])
+[6 8 6 9]
 
 # Even shorter
-x = np.array([1, 2, 3, 4, 4, 35, 212, 5, 5, 6])
-print(x[x < 5])
->>> [1 2 3 4 4]
+>>> x = np.array([1, 2, 3, 4, 4, 35, 212, 5, 5, 6])
+>>> print(x[x < 5])
+[1 2 3 4 4]
 
 ```
 
