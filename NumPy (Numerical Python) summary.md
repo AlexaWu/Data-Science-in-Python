@@ -10,11 +10,11 @@
 - [Copying/Sorting](#gops)
 
 **[Array Manipulation Routines](#man)**
-    - [Adding/Removing Elements](#addrem)
-    - [Combining Arrays](#comb)
-    - [Splitting Arrays](#split)
-    - [Shaping](#shape)
-    - [Misc](#misc)
+- [Adding/Removing Elements](#addrem)
+- [Combining Arrays](#comb)
+- [Splitting Arrays](#split)
+- [Shaping](#shape)
+- [Misc](#misc)
       
 **[Mathematics](#maths)**
 - [Arithmetic Operations](#ops)
