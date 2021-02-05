@@ -34,7 +34,7 @@
 | :------------- | :------------- | :--------|
 |`np.array([1,2,3])`|create 1 dimensional array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.array.html#numpy.array)|
 |`np.array([(1,2,3),(4,5,6)])`|create 2 dimensional array|same above|
-|`np.arange(start,stop,step)`|create range array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.arange.html)|
+|`np.arange(start,stop,step)`|create array with a sequence of numbers, not include stop|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.arange.html)|
 
 ### Examples <a name="ex"></a>
 
