@@ -32,9 +32,9 @@
 
 | Operator     | Description   | Documentation |
 | :------------- | :------------- | :--------|
-|`np.array([1,2,3])`|1d array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.array.html#numpy.array)|
-|`np.array([(1,2,3),(4,5,6)])`|2d array|same above|
-|`np.arange(start,stop,step)`|range array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.arange.html)|
+|`np.array([1,2,3])`|create 1 dimensional array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.array.html#numpy.array)|
+|`np.array([(1,2,3),(4,5,6)])`|create 2 dimensional array|same above|
+|`np.arange(start,stop,step)`|create range array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.arange.html)|
 
 ### Examples <a name="ex"></a>
 
@@ -64,10 +64,10 @@ y = np.arange(3,7,2)
 | Operators | Description |Documentation|
 | :------------- | :------------- |:---------- |
 |`np.linspace(0,2,9)`|Add evenly spaced values btw interval to array of length |[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.linspace.html)|
-|`np.zeros((1,2))`|Create an array filled with zeros|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros.html)|
-|`np.ones((1,2))`|Creates an array filled with ones|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ones.html#numpy.ones)|
+|`np.zeros((1,2))`|Create array filled with zeros|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros.html)|
+|`np.ones((1,2))`|Creates array filled with ones|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ones.html#numpy.ones)|
 |`np.random.random((5,5))`|Creates random array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.random.random.html)|
-|`np.empty((2,2))`|Creates an empty array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.empty.html)|
+|`np.empty((2,2))`|Creates empty array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.empty.html)|
 
 
 
