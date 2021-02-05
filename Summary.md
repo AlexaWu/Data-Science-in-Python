@@ -1,4 +1,5 @@
 ## Index
+
 1. [Basics](#basics)
     - [Placeholders](#place)
     - [Examples](#ex)
@@ -32,8 +33,7 @@
 
 ## Basics <a name="basics"></a>
 
-One of the most commonly used functions of NumPy are *NumPy arrays*: The essential difference between *lists* and *NumPy arrays* is functionality and speed. *lists* give you basic operation, but *NumPy* adds FFTs, convolutions, fast searching, basic statistics, linear algebra, histograms, etc.</br>
-The most important difference for data science is the ability to do **element-wise calculations** with *NumPy arrays*.
+The essential difference between *lists* and *NumPy arrays* is functionality and speed. *lists* give you basic operation, but *NumPy* adds FFTs, convolutions, fast searching, basic statistics, linear algebra, histograms, etc.</br>
 
 `axis 0` always refers to row </br>
 `axis 1` always refers to column
