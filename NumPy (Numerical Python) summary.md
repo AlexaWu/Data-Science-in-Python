@@ -30,7 +30,7 @@
 
 >The essential difference between *lists* and *NumPy arrays* is functionality and speed. *lists* give you basic operation, but *NumPy* adds FFTs, convolutions, fast searching, basic statistics, linear algebra, histograms, etc.</br>
 
-| Operator     | Description   | Documentation |
+| Operator     | Description   | Reference|
 | :------------- | :------------- | :--------|
 |`np.array([1,2,3])`|create 1 dimensional array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.array.html#numpy.array)|
 |`np.array([(1,2,3),(4,5,6)])`|create 2 dimensional array|same above|
@@ -60,7 +60,7 @@ y = np.arange(3,7,2)
 ```
 
 ### Placeholders <a name="place"></a>
-| Operators | Description |Documentation|
+| Operators | Description |Reference|
 | :------------- | :------------- |:---------- |
 |`np.linspace(0,2,9)`|generate a sequence of floats with evenly spaced values, include stop|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.linspace.html)|
 |`np.zeros((2,3))`|Create 2 rows 3 columns array with float zeros|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros.html)|
@@ -93,9 +93,9 @@ np.random.rand(2,3)
 
 ## Array <a name="arrays"></a>
 ### Array Properties <a name="props"></a>
-|Syntax|Description|Documentation|
+|Syntax|Description|Reference|
 |:-------------|:-------------|:-----------|
-|`array.shape`|Dimensions (Rows,Columns)|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.shape.html)|
+|`array.shape`|print out dimensions (Rows,Columns), which returns a tuple|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.shape.html)|
 |`len(array)`|Length of Array|[link](https://docs.python.org/3.5/library/functions.html#len)|
 |`array.ndim`|Number of Array Dimensions|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.ndim.html)|
 |`array.size`|Number of Array Elements|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.size.html)|
@@ -104,7 +104,7 @@ np.random.rand(2,3)
 |`type(array)`|Type of Array|[link](https://docs.scipy.org/doc/numpy/user/basics.types.html)|
 
 ### Copying/Sorting <a name="gops"></a>
-| Operators | Descriptions     | Documentation |
+| Operators | Descriptions     | Reference |
 | :------------- | :------------- | :----------- |
 |`np.copy(array)`|Creates copy of array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.copy.html)|
 |`other = array.copy()`|Creates deep copy of array|see above|
@@ -124,7 +124,7 @@ print(y)
 ## Array Manipulation Routines <a name="man"></a>
 
 ### Adding or Removing Elements <a name="addrem"></a>
-|Operator|Description|Documentation|
+|Operator|Description|Reference|
 |:-----------|:--------|:---------|
 |`np.append(a,b)`|Append items to array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.append.html)|
 |`np.insert(array, 1, 2, axis)`|Insert items into array at axis 0 or 1|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.insert.html)|
@@ -149,7 +149,7 @@ print(np.delete(b, 2))
 ```
 
 ### Combining Arrays <a name="comb"></a>
-|Operator|Description|Documentation|
+|Operator|Description|Reference|
 |:---------|:-------|:---------|
 |`np.concatenate((a,b),axis=0)`|Concatenates 2 arrays, adds to end|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.concatenate.html)|
 |`np.vstack((a,b))`|Stack array row-wise|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.vstack.html)|
@@ -172,7 +172,7 @@ print(np.hstack((a,b)))
 ```
 
 ### Splitting Arrays <a name="split"></a>
-|Operator|Description|Documentation|
+|Operator|Description|Reference|
 |:---------|:-------|:------|
 |`numpy.split()`||[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.split.html)|
 |`np.array_split(array, 3)`|Split an array in sub-arrays of (nearly) identical size|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.array_split.html#numpy.array_split)|
@@ -187,7 +187,7 @@ print(np.array_split(a, 3))
 ```
 ### Shaping Arrays <a name="shape"></a>
 ##### TODO
-|Operator|Description|Documentation|
+|Operator|Description|Reference|
 |:---------|:-------|:------|
 |`other = ndarray.flatten()`|Flattens a 2d array to 1d|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.flatten.html)|
 |numpy.flip()|Flips order of elements in 1D array||
@@ -197,7 +197,7 @@ print(np.array_split(a, 3))
 |expand_dims|||
 
 ### Misc <a name="misc"></a>
-|Operator|Description|Documentation|
+|Operator|Description|Reference|
 |:--------|:--------|:--------|
 |`other = ndarray.flatten()`|Flattens a 2d array to 1d|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.flatten.html)|
 |`array = np.transpose(other)`</br> `array.T` |Transpose array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.transpose.html)|
@@ -215,7 +215,7 @@ array([[ 0.4, -0.1],
 ## Mathematics <a name="maths"></a>
 
 ### Operations <a name="ops"></a>
-| Operator | Description     |Documentation|
+| Operator | Description     |Reference|
 | :------------- | :------------- |:---------|
 |`np.add(x,y)`<br/>`x + y`|Addition|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.add.html)|
 |`np.substract(x,y)`<br/>`x - y`|Subtraction|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.subtract.html#numpy.subtract)|
@@ -252,7 +252,7 @@ array([-2.,  2.])
 ```
 
 ### Comparison
-| Operator | Description | Documentation |
+| Operator | Description | Reference |
 | :------------- | :------------- |:---------|
 |`==`|Equal|[link](https://docs.python.org/2/library/stdtypes.html)|
 |`!=`|Not equal|[link](https://docs.python.org/2/library/stdtypes.html)|
@@ -271,7 +271,7 @@ print(c)
 >>> [ True  True  True  True  True False False False False False]
 ```
 ### Basic Statistics <a name="stats"></a>
-| Operator | Description    | Documentation |
+| Operator | Description    |Reference |
 | :------------- | :------------- |:--------- |
 |`np.mean(array)`|Mean|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.mean.html#numpy.mean)|
 |`np.median(array)`|Median|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.median.html#numpy.median)|
@@ -294,7 +294,7 @@ print(np.median(a))
 
 
 ### More <a name="more"></a>
-| Operator | Description    | Documentation |
+| Operator | Description    | Reference |
 | :------------- | :------------- |:--------- |
 |`array.sum()`|Array-wise sum|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.sum.html)|
 |`array.min()`|Array-wise minimum value|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.min.html)|
@@ -304,7 +304,7 @@ print(np.median(a))
 </br>
 
 ## Slicing and Subsetting <a name="ss"></a>
-|Operator|Description|Documentation|
+|Operator|Description|Reference|
 | :------------- | :------------- | :------------- |
 |`array[i]`|1d array at index i|[link](https://docs.scipy.org/doc/numpy/reference/arrays.indexing.html)|
 |`array[i,j]`|2d array at index[i][j]|see above|
