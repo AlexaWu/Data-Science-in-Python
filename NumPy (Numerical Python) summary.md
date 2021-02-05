@@ -1,3 +1,5 @@
+> Python library/package for scientific computing, contains multidimensional array and matrix data structures. It provides **ndarray** object, a homogeneous n-dimensional array object.
+
 ## Index
 
 1. [Basics](#basics)
