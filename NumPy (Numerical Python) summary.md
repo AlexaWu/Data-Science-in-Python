@@ -1,6 +1,6 @@
 > Python library/package for scientific computing, contains multidimensional array and matrix data structures. It provides **ndarray** object, a homogeneous n-dimensional array object.
 
-**[Basics](#basics)**
+**[Array creation routines](#create)**
 - [Placeholders](#place)
     
 **[Arrays](#arrays)**
@@ -26,7 +26,7 @@
 
 </br>
 
-## Basics <a name="basics"></a>
+## Array creation routines <a name="create"></a>
 
 >The essential difference between *lists* and *NumPy arrays* is functionality and speed. *lists* give you basic operation, but *NumPy* adds FFTs, convolutions, fast searching, basic statistics, linear algebra, histograms, etc.</br>
 
@@ -36,8 +36,7 @@
 |`np.array([(1,2,3),(4,5,6)])`|create 2 dimensional array|same above|
 |`np.arange(start,stop,step)`|create array with a sequence of numbers, not include stop|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.arange.html)|
 
-### Examples <a name="ex"></a>
-
+#### Examples
 ```python
 import numpy as np
 
@@ -63,13 +62,32 @@ y = np.arange(3,7,2)
 ### Placeholders <a name="place"></a>
 | Operators | Description |Documentation|
 | :------------- | :------------- |:---------- |
-|`np.linspace(0,2,9)`|Add evenly spaced values btw interval to array of length |[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.linspace.html)|
-|`np.zeros((1,2))`|Create array filled with zeros|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros.html)|
-|`np.ones((1,2))`|Creates array filled with ones|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ones.html#numpy.ones)|
-|`np.random.random((5,5))`|Creates random array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.random.random.html)|
-|`np.empty((2,2))`|Creates empty array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.empty.html)|
+|`np.linspace(0,2,9)`|generate a sequence of floats with evenly spaced values, include stop|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.linspace.html)|
+|`np.zeros((2,3))`|Create 2 rows 3 columns array with float zeros|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros.html)|
+|`np.ones((2,4))`|Creates 2 rows 3 columns with float ones|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ones.html#numpy.ones)|
+|`np.random.random((5,5))`|Creates 5 rows 5 columns random float array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.random.random.html)|
 
+#### Examples
+```python
+np.linspace( 0, 2, 15 )
+>>> array([0.        , 0.14285714, 0.28571429, 0.42857143, 0.57142857,
+       0.71428571, 0.85714286, 1.        , 1.14285714, 1.28571429,
+       1.42857143, 1.57142857, 1.71428571, 1.85714286, 2.        ])
 
+d = np.zeros((2,3))
+print(d)
+>>> [[0. 0. 0.]
+ [0. 0. 0.]]
+
+e = np.ones((2,3))
+print(e)
+>>> [[1. 1. 1.]
+ [1. 1. 1.]]
+
+np.random.rand(2,3)
+>>> array([[0.63814812, 0.10556618, 0.80024855],
+       [0.45082757, 0.84823512, 0.28658515]])
+```
 
 </br>
 
@@ -93,7 +111,7 @@ y = np.arange(3,7,2)
 |`array.sort()`|Sorts an array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.sort.html)|
 |`array.sort(axis=0)`|Sorts axis of array|see above|
 
-#### Examples <a name="array-example"></a>
+#### Examples
 ```python
 import numpy as np
 # Sort sorts in ascending order
@@ -116,7 +134,7 @@ print(y)
 >`axis 0` always refers to row </br>
 `axis 1` always refers to column
 
-#### Example <a name="array-elements-examples"></a>
+#### Example
 ```python
 import numpy as np
 # Append items to array
@@ -137,7 +155,7 @@ print(np.delete(b, 2))
 |`np.vstack((a,b))`|Stack array row-wise|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.vstack.html)|
 |`np.hstack((a,b))`|Stack array column wise|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.hstack.html#numpy.hstack)|
 
-#### Example <a name="array-combine-examples"></a>
+#### Example
 ```python
 import numpy as np
 a = np.array([1, 3, 5])
@@ -160,7 +178,7 @@ print(np.hstack((a,b)))
 |`np.array_split(array, 3)`|Split an array in sub-arrays of (nearly) identical size|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.array_split.html#numpy.array_split)|
 |`numpy.hsplit(array, 3)`|Split the array horizontally at 3rd index|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.hsplit.html#numpy.hsplit)|
 
-#### Example <a name="array-split-examples"></a>
+#### Example
 ```python
 # Split array into groups of ~3
 a = np.array([1, 2, 3, 4, 5, 6, 7, 8])
@@ -186,7 +204,7 @@ print(np.array_split(a, 3))
 |`inverse = np.linalg.inv(matrix)`|Inverse of a given matrix|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.linalg.inv.html) |
 </br>
 
-#### Example <a name="inverse of a matrix"></a>
+#### Example
 ```python
 # Find inverse of a given matrix
 >>> np.linalg.inv([[3,1],[2,4]])
@@ -212,7 +230,7 @@ array([[ 0.4, -0.1],
 
 Remember: NumPy array operations work element-wise.
 
-#### Example <a name="operations-examples"></a>
+#### Example
 ```python
 # If a 1d array is added to a 2d array (or the other way), NumPy
 # chooses the array with smaller dimension and adds it to the one
@@ -244,7 +262,7 @@ array([-2.,  2.])
 |`>=`|Greater than or equal|[link](https://docs.python.org/2/library/stdtypes.html)|
 |`np.array_equal(x,y)`|Array-wise comparison|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.array_equal.html)|
 
-#### Example <a name="comparison-example"></a>
+#### Example
 ```python
 # Using comparison operators will create boolean NumPy arrays
 z = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
@@ -260,7 +278,7 @@ print(c)
 |`array.corrcoef()`|Correlation Coefficient|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.corrcoef.html#numpy.corrcoef)|
 |`np.std(array)`|Standard Deviation|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.std.html#numpy.std)|
 
-#### Example <a name="stats-examples"></a>
+#### Example
 ```python
 # Statistics of an array
 a = np.array([1, 1, 2, 5, 8, 10, 11, 12])
@@ -299,7 +317,7 @@ print(np.median(a))
 |`array[ : :-1]`|Reverses `array`|see above|
 
 
-#### Examples <a name="exp"></a>
+#### Examples
 ```python
 b = np.array([(1, 2, 3), (4, 5, 6)])
 
