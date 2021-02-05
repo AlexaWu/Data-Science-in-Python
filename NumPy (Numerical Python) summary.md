@@ -11,14 +11,14 @@
 - [Copying/Sorting](#gops)
       * [Examples](#array-example)
 - [Array Manipulation](#man)
-      * [Adding/Removing Elements](#addrem)
+    - [Adding/Removing Elements](#addrem)
         + [Examples](#array-elements-examples)
-      * [Combining Arrays](#comb)
+    - [Combining Arrays](#comb)
         + [Examples](#array-combine-examples)
-      * [Splitting Arrays](#split)
+    - [Splitting Arrays](#split)
         + [Examples](#array-split-examples)
-      * [Shaping](#shape)
-      * [Misc](#misc)
+    - [Shaping](#shape)
+    - [Misc](#misc)
       
 **[Mathematics](#maths)**
 - [Arithmetic Operations](#ops)
@@ -340,9 +340,7 @@ print(d)
 </br>
 
 ## Tricks <a name="tricks"></a>
-This is a growing list of examples. Know a good trick? Let me know in a issue or fork it and create a pull request.
 
-*boolean indexing* (available as separate `.py` file [here](https://github.com/JulianGaal/python-cheat-sheet/blob/master/code/boolean-indexing.py)
 ```python
 # Index trick when working with two np-arrays
 a = np.array([1,2,3,6,1,4,1])
