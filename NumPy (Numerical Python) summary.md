@@ -64,7 +64,7 @@ y = np.arange(3,7,2)
 | :------------- | :------------- |:---------- |
 |`np.linspace(0,2,9)`|generate a sequence of floats with evenly spaced values, include stop|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.linspace.html)|
 |`np.zeros((2,3))`|Create 2 rows 3 columns array with float zeros|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros.html)|
-|`np.ones((2,4))`|Creates 2 rows 3 columns with float ones|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ones.html#numpy.ones)|
+|`np.ones((2,4))`|Creates 2 rows 4 columns with float ones|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ones.html#numpy.ones)|
 |`np.random.random((5,5))`|Creates 5 rows 5 columns random float array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.random.random.html)|
 
 #### Examples
