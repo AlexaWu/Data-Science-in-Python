@@ -36,23 +36,11 @@
 
 >The essential difference between *lists* and *NumPy arrays* is functionality and speed. *lists* give you basic operation, but *NumPy* adds FFTs, convolutions, fast searching, basic statistics, linear algebra, histograms, etc.</br>
 
-`axis 0` always refers to row </br>
-`axis 1` always refers to column
-
 | Operator     | Description   | Documentation |
 | :------------- | :------------- | :--------|
 |`np.array([1,2,3])`|1d array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.array.html#numpy.array)|
-|`np.array([(1,2,3),(4,5,6)])`|2d array|see above|
+|`np.array([(1,2,3),(4,5,6)])`|2d array|same above|
 |`np.arange(start,stop,step)`|range array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.arange.html)|
-
-### Placeholders <a name="place"></a>
-| Operators | Description |Documentation|
-| :------------- | :------------- |:---------- |
-|`np.linspace(0,2,9)`|Add evenly spaced values btw interval to array of length |[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.linspace.html)|
-|`np.zeros((1,2))`|Create and array filled with zeros|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros.html)|
-|`np.ones((1,2))`|Creates an array filled with ones|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ones.html#numpy.ones)|
-|`np.random.random((5,5))`|Creates random array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.random.random.html)|
-|`np.empty((2,2))`|Creates an empty array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.empty.html)|
 
 ### Examples <a name="ex"></a>
 
@@ -61,6 +49,7 @@ import numpy as np
 
 # 1 dimensional
 x = np.array([1,2,3])
+
 # 2 dimensional
 y = np.array([(1,2,3),(4,5,6)])
 
@@ -76,6 +65,17 @@ x = np.arange(3,7)
 y = np.arange(3,7,2)
 >>> array([3, 5])
 ```
+
+### Placeholders <a name="place"></a>
+| Operators | Description |Documentation|
+| :------------- | :------------- |:---------- |
+|`np.linspace(0,2,9)`|Add evenly spaced values btw interval to array of length |[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.linspace.html)|
+|`np.zeros((1,2))`|Create an array filled with zeros|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros.html)|
+|`np.ones((1,2))`|Creates an array filled with ones|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ones.html#numpy.ones)|
+|`np.random.random((5,5))`|Creates random array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.random.random.html)|
+|`np.empty((2,2))`|Creates an empty array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.empty.html)|
+
+
 
 </br>
 
@@ -118,6 +118,9 @@ print(y)
 |`np.insert(array, 1, 2, axis)`|Insert items into array at axis 0 or 1|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.insert.html)|
 |`np.resize((2,4))`|Resize array to shape(2,4)|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.resize.html)|
 |`np.delete(array,1,axis)`|Deletes items from array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.delete.html)|
+
+>`axis 0` always refers to row </br>
+`axis 1` always refers to column
 
 #### Example <a name="array-elements-examples"></a>
 ```python
