@@ -29,13 +29,12 @@
 4. [Slicing and Subsetting](#ss)
     - [Examples](#exp)
 5. [Tricks](#tricks)
-6. [Credits](#creds)
 
 </br>
 
 ## Basics <a name="basics"></a>
 
-The essential difference between *lists* and *NumPy arrays* is functionality and speed. *lists* give you basic operation, but *NumPy* adds FFTs, convolutions, fast searching, basic statistics, linear algebra, histograms, etc.</br>
+>The essential difference between *lists* and *NumPy arrays* is functionality and speed. *lists* give you basic operation, but *NumPy* adds FFTs, convolutions, fast searching, basic statistics, linear algebra, histograms, etc.</br>
 
 `axis 0` always refers to row </br>
 `axis 1` always refers to column
