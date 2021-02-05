@@ -4,33 +4,25 @@
 
 **[Basics](#basics)**
 - [Placeholders](#place)
-- [Examples](#ex)
     
 **[Arrays](#arrays)**
 - [Properties](#props)
 - [Copying/Sorting](#gops)
-      * [Examples](#array-example)
-- [Array Manipulation](#man)
+
+**[Array Manipulation Routines](#man)**
     - [Adding/Removing Elements](#addrem)
-        + [Examples](#array-elements-examples)
     - [Combining Arrays](#comb)
-        + [Examples](#array-combine-examples)
     - [Splitting Arrays](#split)
-        + [Examples](#array-split-examples)
     - [Shaping](#shape)
     - [Misc](#misc)
       
 **[Mathematics](#maths)**
 - [Arithmetic Operations](#ops)
-      * [Examples](#operations-examples)
 - [Comparison](#comparison)
-      * [Examples](#comparison-example)
 - [Basic Statistics](#stats)
-      * [Examples](#stats-examples)
 - [More](#more)
     
 **[Slicing and Subsetting](#ss)**
-- [Examples](#exp)
     
 **[Tricks](#tricks)**
 
