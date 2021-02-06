@@ -3,9 +3,7 @@
 **[Array creation routines](#create)**
 - [Placeholders](#place)
     
-**[Arrays](#arrays)**
-- [Properties](#props)
-- [Copying/Sorting](#gops)
+**[Arrays Properties](#props)**
 
 **[Array Manipulation Routines](#man)**
 - [Adding/Removing Elements](#addrem)
@@ -91,8 +89,7 @@ array([[0.63814812, 0.10556618, 0.80024855],
 
 </br>
 
-## Array <a name="arrays"></a>
-### Array Properties <a name="props"></a>
+## Array Properties <a name="props"></a>
 |Syntax|Description|Reference|
 |:-------------|:-------------|:-----------|
 |`array.shape`|check dimensions (Rows,Columns), which returns a tuple|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.shape.html)|
@@ -100,23 +97,6 @@ array([[0.63814812, 0.10556618, 0.80024855],
 |`array.ndim`|check number of Array Dimensions|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.ndim.html)|
 |`array.dtype`|check data Type|[link](https://docs.scipy.org/doc/numpy/reference/arrays.dtypes.html)|
 |`array.astype(type)`|Converts Data Type|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.astype.html)|
-
-### Copying/Sorting <a name="gops"></a>
-| Operators | Descriptions     | Reference |
-| :------------- | :------------- | :----------- |
-|`np.copy(array)`|Creates copy of array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.copy.html)|
-|`other = array.copy()`|Creates deep copy of array|see above|
-|`array.sort()`|Sorts an array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.sort.html)|
-|`array.sort(axis=0)`|Sorts axis of array|see above|
-
-#### Examples
-```python
-# Sort sorts in ascending order
->>> y = np.array([10, 9, 8, 7, 6, 5, 4, 3, 2, 1])
->>> y.sort()
->>> print(y)
-[ 1  2  3  4  5  6  7  8  9  10]
-```
 
 ## Array Manipulation Routines <a name="man"></a>
 
