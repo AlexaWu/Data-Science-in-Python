@@ -101,34 +101,16 @@ array([[0.63814812, 0.10556618, 0.80024855],
 |`np.divide(x,y)`|x / y|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.divide.html#numpy.divide)|
 |`np.multiply(x,y)`|x @ y|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.multiply.html#numpy.multiply)|
 |`np.sqrt(x)`|Square Root|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.sqrt.html#numpy.sqrt)|
-|`np.sin(x)`|Element-wise sine|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.sin.html#numpy.sin)|
-|`np.cos(x)`|Element-wise cosine|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.cos.html#numpy.cos)|
-|`np.log(x)`|Element-wise natural log|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.log.html#numpy.log)|
-|`np.dot(x,y)`|Dot product|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.dot.html)|
-|`np.roots([1,0,-4])`|Roots of a given polynomial coefficients|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.roots.html)|
 
-Remember: NumPy array operations work element-wise.
+>NumPy array operations work element-wise. If a 1d array is added to a 2d array (or the other way), NumPy chooses the array with smaller dimension and adds it to the one with bigger dimension
 
 #### Example
 ```python
-# If a 1d array is added to a 2d array (or the other way), NumPy
-# chooses the array with smaller dimension and adds it to the one
-# with bigger dimension
-a = np.array([1, 2, 3])
-b = np.array([(1, 2, 3), (4, 5, 6)])
-print(np.add(a, b))
->>> [[2 4 6]
-     [5 7 9]]
-     
-# Example of np.roots
-# Consider a polynomial function (x-1)^2 = x^2 - 2*x + 1
-# Whose roots are 1,1
->>> np.roots([1,-2,1])
-array([1., 1.])
-
-# Similarly x^2 - 4 = 0 has roots as x=±2
->>> np.roots([1,0,-4])
-array([-2.,  2.])
+>>> a = np.array([1, 2, 3])
+>>> b = np.array([(1, 2, 3), (4, 5, 6)])
+>>> print(np.add(a, b))
+[[2 4 6]
+ [5 7 9]]
 ```
 
 ### Comparison
@@ -172,7 +154,6 @@ a = np.array([1, 1, 2, 5, 8, 10, 11, 12])
 6.5
 ```
 
-
 ### More <a name="more"></a>
 | Operator | Description    | Reference |
 | :------------- | :------------- |:--------- |
@@ -180,8 +161,6 @@ a = np.array([1, 1, 2, 5, 8, 10, 11, 12])
 |`array.min()`|Array-wise minimum value|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.min.html)|
 |`array.max(axis=0)`|Maximum value of specified axis||
 |`array.cumsum(axis=0)`|Cumulative sum of specified axis|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.cumsum.html)|
-
-</br>
 
 ## Slicing and Subsetting <a name="ss"></a>
 |Operator|Description|Reference|
