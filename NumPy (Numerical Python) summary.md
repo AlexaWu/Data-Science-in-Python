@@ -96,10 +96,10 @@ array([[0.63814812, 0.10556618, 0.80024855],
 ### Operations <a name="ops"></a>
 | Operator | Description     |Reference|
 | :------------- | :------------- |:---------|
-|`np.add(x,y)`<br/>`x + y`|Addition|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.add.html)|
-|`np.substract(x,y)`<br/>`x - y`|Subtraction|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.subtract.html#numpy.subtract)|
-|`np.divide(x,y)`<br/>`x / y`|Division|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.divide.html#numpy.divide)|
-|`np.multiply(x,y)`<br/>`x @ y`|Multiplication|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.multiply.html#numpy.multiply)|
+|`np.add(x,y)`|x + y|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.add.html)|
+|`np.substract(x,y)`|x - y|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.subtract.html#numpy.subtract)|
+|`np.divide(x,y)`|x / y|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.divide.html#numpy.divide)|
+|`np.multiply(x,y)`|x @ y|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.multiply.html#numpy.multiply)|
 |`np.sqrt(x)`|Square Root|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.sqrt.html#numpy.sqrt)|
 |`np.sin(x)`|Element-wise sine|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.sin.html#numpy.sin)|
 |`np.cos(x)`|Element-wise cosine|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.cos.html#numpy.cos)|
