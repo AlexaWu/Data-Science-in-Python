@@ -233,5 +233,4 @@ other_other_a = a[b != 1]
 
 ```
 
-</br>
-
+[NumPy / SciPy / Pandas Cheat Sheet](https://s3.amazonaws.com/quandl-static-content/Documents/Quandl+-+Pandas,+SciPy,+NumPy+Cheat+Sheet.pdf)
