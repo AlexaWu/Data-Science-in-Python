@@ -100,7 +100,6 @@ array([[0.63814812, 0.10556618, 0.80024855],
 |`array.ndim`|check number of Array Dimensions|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.ndim.html)|
 |`array.dtype`|check data Type|[link](https://docs.scipy.org/doc/numpy/reference/arrays.dtypes.html)|
 |`array.astype(type)`|Converts Data Type|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.astype.html)|
-|`type(array)`|Type of Array|[link](https://docs.scipy.org/doc/numpy/user/basics.types.html)|
 
 ### Copying/Sorting <a name="gops"></a>
 | Operators | Descriptions     | Reference |
