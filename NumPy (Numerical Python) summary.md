@@ -6,8 +6,6 @@
 **[Arrays Properties](#props)**
 
 **[Array Manipulation Routines](#man)**
-- [Adding/Removing Elements](#addrem)
-- [Combining Arrays](#comb)
 - [Splitting Arrays](#split)
 - [Shaping](#shape)
 - [Misc](#misc)
@@ -97,54 +95,6 @@ array([[0.63814812, 0.10556618, 0.80024855],
 |`array.ndim`|check number of Array Dimensions|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.ndim.html)|
 |`array.dtype`|check data Type|[link](https://docs.scipy.org/doc/numpy/reference/arrays.dtypes.html)|
 |`array.astype(type)`|Converts Data Type|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.astype.html)|
-
-## Array Manipulation Routines <a name="man"></a>
-
-### Adding or Removing Elements <a name="addrem"></a>
-|Operator|Description|Reference|
-|:-----------|:--------|:---------|
-|`np.append(a,b)`|Append items to array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.append.html)|
-|`np.insert(array, 1, 2, axis)`|Insert items into array at axis 0 or 1|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.insert.html)|
-|`np.resize((2,4))`|Resize array to shape(2,4)|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.resize.html)|
-|`np.delete(array,1,axis)`|Deletes items from array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.delete.html)|
-
->`axis 0` always refers to row </br>
-`axis 1` always refers to column
-
-#### Example
-```python
-# Append items to array
->>> a = np.array([(1, 2, 3),(4, 5, 6)])
->>> b = np.append(a, [(7, 8, 9)])
->>> print(b)
-[1 2 3 4 5 6 7 8 9]
-
-# Remove index 2 from previous array
->>> print(np.delete(b, 2))
-[1 2 4 5 6 7 8 9]
-```
-
-### Combining Arrays <a name="comb"></a>
-|Operator|Description|Reference|
-|:---------|:-------|:---------|
-|`np.concatenate((a,b),axis=0)`|Concatenates 2 arrays, adds to end|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.concatenate.html)|
-|`np.vstack((a,b))`|Stack array row-wise|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.vstack.html)|
-|`np.hstack((a,b))`|Stack array column wise|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.hstack.html#numpy.hstack)|
-
-#### Example
-```python
->>> a = np.array([1, 3, 5])
->>> b = np.array([2, 4, 6])
-
-# Stack two arrays row-wise
->>> print(np.vstack((a,b)))
-[[1 3 5]
- [2 4 6]]
-
-# Stack two arrays column-wise
->>> print(np.hstack((a,b)))
-[1 3 5 2 4 6]
-```
 
 ### Splitting Arrays <a name="split"></a>
 |Operator|Description|Reference|
