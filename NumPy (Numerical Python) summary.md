@@ -4,11 +4,6 @@
 - [Placeholders](#place)
     
 **[Arrays Properties](#props)**
-
-**[Array Manipulation Routines](#man)**
-- [Splitting Arrays](#split)
-- [Shaping](#shape)
-- [Misc](#misc)
       
 **[Mathematics](#maths)**
 - [Arithmetic Operations](#ops)
@@ -95,47 +90,6 @@ array([[0.63814812, 0.10556618, 0.80024855],
 |`array.ndim`|check number of Array Dimensions|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.ndim.html)|
 |`array.dtype`|check data Type|[link](https://docs.scipy.org/doc/numpy/reference/arrays.dtypes.html)|
 |`array.astype(type)`|Converts Data Type|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.astype.html)|
-
-### Splitting Arrays <a name="split"></a>
-|Operator|Description|Reference|
-|:---------|:-------|:------|
-|`numpy.split()`||[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.split.html)|
-|`np.array_split(array, 3)`|Split an array in sub-arrays of (nearly) identical size|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.array_split.html#numpy.array_split)|
-|`numpy.hsplit(array, 3)`|Split the array horizontally at 3rd index|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.hsplit.html#numpy.hsplit)|
-
-#### Example
-```python
-# Split array into groups of ~3
->>> a = np.array([1, 2, 3, 4, 5, 6, 7, 8])
->>> print(np.array_split(a, 3))
-[array([1, 2, 3]), array([4, 5, 6]), array([7, 8])]
-```
-### Shaping Arrays <a name="shape"></a>
-##### TODO
-|Operator|Description|Reference|
-|:---------|:-------|:------|
-|`other = ndarray.flatten()`|Flattens a 2d array to 1d|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.flatten.html)|
-|numpy.flip()|Flips order of elements in 1D array||
-|np.ndarray[::-1]|Same as above||
-|reshape|||
-|squeeze|||
-|expand_dims|||
-
-### Misc <a name="misc"></a>
-|Operator|Description|Reference|
-|:--------|:--------|:--------|
-|`other = ndarray.flatten()`|Flattens a 2d array to 1d|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.flatten.html)|
-|`array = np.transpose(other)`</br> `array.T` |Transpose array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.transpose.html)|
-|`inverse = np.linalg.inv(matrix)`|Inverse of a given matrix|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.linalg.inv.html) |
-</br>
-
-#### Example
-```python
-# Find inverse of a given matrix
->>> np.linalg.inv([[3,1],[2,4]])
-array([[ 0.4, -0.1],
-       [-0.2,  0.3]])
-```
 
 ## Mathematics <a name="maths"></a>
 
