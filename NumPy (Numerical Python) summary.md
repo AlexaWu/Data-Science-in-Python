@@ -95,12 +95,11 @@ array([[0.63814812, 0.10556618, 0.80024855],
 ### Array Properties <a name="props"></a>
 |Syntax|Description|Reference|
 |:-------------|:-------------|:-----------|
-|`array.shape`|print out dimensions (Rows,Columns), which returns a tuple|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.shape.html)|
-|`len(array)`|Length of Array|[link](https://docs.python.org/3.5/library/functions.html#len)|
-|`array.ndim`|Number of Array Dimensions|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.ndim.html)|
-|`array.size`|Number of Array Elements|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.size.html)|
-|`array.dtype`|Data Type|[link](https://docs.scipy.org/doc/numpy/reference/arrays.dtypes.html)|
-|`array.astype(type)`|Converts to Data Type|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.astype.html)|
+|`array.shape`|check dimensions (Rows,Columns), which returns a tuple|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.shape.html)|
+|`len(array)`|check length of Array|[link](https://docs.python.org/3.5/library/functions.html#len)|
+|`array.ndim`|check number of Array Dimensions|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.ndim.html)|
+|`array.dtype`|check data Type|[link](https://docs.scipy.org/doc/numpy/reference/arrays.dtypes.html)|
+|`array.astype(type)`|Converts Data Type|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.astype.html)|
 |`type(array)`|Type of Array|[link](https://docs.scipy.org/doc/numpy/user/basics.types.html)|
 
 ### Copying/Sorting <a name="gops"></a>
