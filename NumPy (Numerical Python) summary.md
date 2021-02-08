@@ -114,6 +114,9 @@ array([[0.63814812, 0.10556618, 0.80024855],
 ```
 
 ### Comparison
+
+> Using comparison operators will create boolean arrays
+
 | Operator | Description | Reference |
 | :------------- | :------------- |:---------|
 |`==`|Equal|[link](https://docs.python.org/2/library/stdtypes.html)|
@@ -126,12 +129,12 @@ array([[0.63814812, 0.10556618, 0.80024855],
 
 #### Example
 ```python
-# Using comparison operators will create boolean NumPy arrays
 >>> z = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 >>> c = z < 6
 >>> print(c)
 [ True  True  True  True  True False False False False False]
 ```
+
 ### Basic Statistics <a name="stats"></a>
 | Operator | Description    |Reference |
 | :------------- | :------------- |:--------- |
@@ -142,14 +145,11 @@ array([[0.63814812, 0.10556618, 0.80024855],
 
 #### Example
 ```python
-# Statistics of an array
-a = np.array([1, 1, 2, 5, 8, 10, 11, 12])
+>>> a = np.array([1, 1, 2, 5, 8, 10, 11, 12])
 
-# Standard deviation
 >>> print(np.std(a))
 4.2938910093294167
 
-# Median
 >>> print(np.median(a))
 6.5
 ```
