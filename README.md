@@ -1,6 +1,6 @@
 # Summary
 
-- data manipulation and cleaning techniques using the python pandas data science library 
+- data manipulation and cleaning techniques using the python pandas 
 
 - abstraction of the Series and DataFrame as the central data structures for data analysis, along with tutorials on how to use functions such as groupby, merge, and pivot tables effectively
 
